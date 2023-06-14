@@ -10,3 +10,21 @@
 //     ]
 //   },
 // });
+
+module.exports = ({ env }) => ({
+  "netlify-deployments": {
+    enabled: true,
+    config: {
+      accessToken: "FiT_o3Tn20dY-j0OVhpYCyfCJLm8ihuH6L-gtGhS5J4",
+      sites: [
+        {
+          name: "Site 1",
+          id: "28832e9b-b5cd-43fa-b25b-025081656f8e",
+          buildHook:
+            "https://api.netlify.com/build_hooks/648a0b0c7646930f277b52de",
+          branch: "main", // optional
+        },
+      ],
+    },
+  },
+});
